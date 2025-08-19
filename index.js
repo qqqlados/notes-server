@@ -7,26 +7,7 @@ app.use(cors())
 
 app.use(express.json())
 
-const notes = [
-	{
-		id: 1,
-		title: 'First note',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-		createdAt: '2025-08-18',
-	},
-	{
-		id: 2,
-		title: 'Second note',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-		createdAt: '2025-06-18',
-	},
-	{
-		id: 3,
-		title: 'Third note',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-		createdAt: '2025-04-18',
-	},
-]
+const notes = []
 
 app.get('/notes', (req, res) => {
 	res.json(notes)
